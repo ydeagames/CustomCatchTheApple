@@ -21,6 +21,12 @@ public class GameDirector : MonoBehaviour
         point /= 2;
     }
 
+    public void GetPoint()
+    {
+        point += 100;
+        time += 10;
+    }
+
     // Use this for initialization
     void Start()
     {

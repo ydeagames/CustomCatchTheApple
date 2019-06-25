@@ -12,4 +12,9 @@ public class ItemController : MonoBehaviour {
         if (transform.position.y < -1f)
             Destroy(gameObject);
 	}
+
+    void OnTriggerEnter(Collider other)
+    {
+        GameObject.Find("Board").GetComponent<BoardController>().AddStone(gameObject);
+    }
 }

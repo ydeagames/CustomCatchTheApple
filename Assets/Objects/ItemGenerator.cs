@@ -22,7 +22,7 @@ public class ItemGenerator : MonoBehaviour
     void Update()
     {
         delta += Time.deltaTime;
-        if (delta > span)
+        if (delta > span /*|| Input.GetKeyDown(KeyCode.Return)*/)
         {
             delta = 0;
             int dice = Random.Range(1, 11);
